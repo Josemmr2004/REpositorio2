@@ -74,20 +74,26 @@ disk {
 
     customize {
       windows_options {
-        computer_name = "win16test1"
+        computer_name = "win16testjmm"
         join_domain = "cinconet.local"
-        domain_admin_user = "frodriguez@cinconet.local"
-        domain_admin_password = "Bai0na17"
+        domain_admin_user = "backup@cinconet.local"
+        domain_admin_password = "Entraya123"
       }
 
       network_interface {
         ipv4_address = "10.100.86.253"
         ipv4_netmask = 24
+	dns_server_list = "${var.virtual_machine_dns_servers}"
       }
 
       ipv4_gateway = "10.100.86.254"
+
+     }
+
+          
     }
- }
+    
+
 }
 
 
